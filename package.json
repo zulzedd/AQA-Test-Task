@@ -1,0 +1,23 @@
+{
+  "name": "aqa-test-task",
+  "version": "1.0.0",
+  "description": "Test task on AQA position Kevych Solutions",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Denys Ivanina",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test-chrome-only": "npx playwright test --project=chromium",
+    "test-headed": "npx playwright test --headed --project=chromium --ui",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.2.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.4"
+  }
+}
